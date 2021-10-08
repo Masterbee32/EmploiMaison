@@ -14,14 +14,27 @@ h1,h2,h3,h4,p{
      font-weight: bolder;
  }
 .cadre{
-    top: 50%;
+     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    position: absolute;
+   position: absolute;
     border-radius: 50px 20px 10px 20px;
     background-color: rgb(177, 45, 45);
 
 }
+@media(max-width: 430px){
+    .cadre{
+      margin-top: 40px;
+        
+    }
+}
+
+@media(max-width: 340px){
+    .cadre{
+        margin-top: 85px;
+    }
+}
+
 marquee p{
  }
 section{
@@ -45,3 +58,4 @@ footer{
 ul li{
     list-style: none;
 }
+

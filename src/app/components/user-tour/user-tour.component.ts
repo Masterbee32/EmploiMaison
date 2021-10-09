@@ -43,7 +43,7 @@ export class UserTourComponent implements OnInit {
     this.nettoyage= "Bah Elhadj Mamadou";
     this.cuisine="Moussa Cissé"; 
  }
- else if(this.currentDate>=22 && this.currentDate<=29){
+ else if(this.currentDate>=22 && this.currentDate<=31){
   this.nettoyage= "Moussa Bemba";
   this.cuisine="Alpha Diallo";
   

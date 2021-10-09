@@ -13,7 +13,7 @@ export class UserTourComponent implements OnInit {
   public donnees: any;
   public currentDate:any;
   public nettoyage: String | undefined; 
-  public payement: String | undefined
+  public cuisine: String | undefined
   constructor(private _userService: UserService) { 
    // this.donnees= new User("","","")
    }
@@ -31,21 +31,21 @@ export class UserTourComponent implements OnInit {
     this.currentDate= new Date().getUTCDate()
     if(this.currentDate>=1 && this.currentDate<=7){
        this.nettoyage= "Mamadou Alpha Diallo";
-       this.payement="Moussa Bemba"
+       this.cuisine="Moussa Bemba"
        
     }
     else if(this.currentDate>=8 && this.currentDate<=14){
-      this.nettoyage= "Moussa Cissé";
-      this.payement="Bah Elhadj Mamadou";
+      this.nettoyage= "Moussa Cissé ou Mamma";
+      this.cuisine="Bah Elhadj Mamadou";
       
    }
    else if(this.currentDate>=15 && this.currentDate<=21){
     this.nettoyage= "Bah Elhadj Mamadou";
-    this.payement="Moussa Cissé"; 
+    this.cuisine="Moussa Cissé"; 
  }
- else if(this.currentDate>=22 && this.currentDate<=31){
+ else if(this.currentDate>=22 && this.currentDate<=29){
   this.nettoyage= "Moussa Bemba";
-  this.payement="Alpha Diallo";
+  this.cuisine="Alpha Diallo";
   
 }
 
